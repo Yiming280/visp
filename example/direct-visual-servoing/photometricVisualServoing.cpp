@@ -367,7 +367,7 @@ int main(int argc, const char **argv)
     // set the gain
     servo.setLambda(30);
     // compute interaction matrix at the desired position
-    servo.setInteractionMatrixType(vpServo::CURRENT);
+    servo.setInteractionMatrixType(vpServo::DESIRED);
 
     // set a velocity control mode
     robot.setRobotState(vpRobot::STATE_VELOCITY_CONTROL);
